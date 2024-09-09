@@ -9,6 +9,7 @@ This project simulates a 1D convection diffusion equation using [Physics-Informe
 </figure>
 
 
+<br>
 DeepXDE is a popular library for PINN, and supports Tensorflow (1.x and 2.x), PyTorch, JAX, and PaddlePaddle as backends. It contains many in-built functions and tools which makes code structure simple. Additionally, it offers superior training time, as the automatic differentiation function is a [lazy evaluation](https://deepxde.readthedocs.io/en/latest/modules/deepxde.gradients.html#module-deepxde.gradients.gradients), which means that gradients are only computed when needed.
 
 To install and use DeepXDE, make sure you have the required [prequisites](https://github.com/lululxvi/deepxde?tab=readme-ov-file).
