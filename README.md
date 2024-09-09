@@ -3,11 +3,11 @@
 
 This project simulates a 1D convection diffusion equation using [Physics-Informed Neural Networks (PINN)](https://www.sciencedirect.com/science/article/abs/pii/S0021999118307125). It was inspired by Prof Pavlos Aleiferis's assignment from Computational Fluid Dynamics Module and utilises the [DeepXDE](https://github.com/lululxvi/deepxde?tab=readme-ov-file) library for implementation.
 
-<figure style="text-align: center;">
-  <img src="readme image\PINN_schematic.png" alt="PINN schematic" style="display: block; margin-left: auto; margin-right: auto;">
-  <figcaption>Figure 1: Schematic diagram of PINN, with loss driven by data, partial differential equations, and boundary conditions.</figcaption>
-</figure>
+<p align="center">
+  <img src="readme image\PINN_schematic.png" alt="PINN schematic">
+</p>
 
+<p align="center"><i>Figure 1: Schematic diagram of PINN, with loss driven by data, partial differential equations, and boundary conditions.<i></p>
 
 <br>
 DeepXDE is a popular library for PINN, and supports Tensorflow (1.x and 2.x), PyTorch, JAX, and PaddlePaddle as backends. It contains many in-built functions and tools which makes code structure simple. Additionally, it offers superior training time, as the automatic differentiation function is a [lazy evaluation](https://deepxde.readthedocs.io/en/latest/modules/deepxde.gradients.html#module-deepxde.gradients.gradients), which means that gradients are only computed when needed.
@@ -23,10 +23,11 @@ import deepxde as dde
 
 
 ## 1. Problem Setup
-<figure style="text-align: center;">
-  <img src="readme image\problem_setup.png" alt="problem setup" style="display: block; margin-left: auto; margin-right: auto;">
-  <figcaption>Figure 2: 1-D domain of length <i>L</i> transporting a property &phi;.</figcaption>
-</figure>
+<p align="center">
+  <img src="readme image/problem_setup.png" alt="problem setup">
+</p>
+
+<p align="center"><i>Figure 2: 1-D domain of length <i>L</i> transporting a property φ.</i></p>
 
 A property &phi; is transported by means of convection and diffusion through the 1-D domain of length L. In a steady convection diffusion scenario, the equation can be define as:
 $$ 
