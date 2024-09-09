@@ -9,7 +9,6 @@ This project simulates a 1D convection diffusion equation using [Physics-Informe
 
 <p align="center"><i>Figure 1: Schematic diagram of PINN, with loss driven by data, partial differential equations, and boundary conditions.<i></p>
 
-<br>
 DeepXDE is a popular library for PINN, and supports Tensorflow (1.x and 2.x), PyTorch, JAX, and PaddlePaddle as backends. It contains many in-built functions and tools which makes code structure simple. Additionally, it offers superior training time, as the automatic differentiation function is a [lazy evaluation](https://deepxde.readthedocs.io/en/latest/modules/deepxde.gradients.html#module-deepxde.gradients.gradients), which means that gradients are only computed when needed.
 
 To install and use DeepXDE, make sure you have the required [prequisites](https://github.com/lululxvi/deepxde?tab=readme-ov-file).
@@ -30,15 +29,15 @@ import deepxde as dde
 <p align="center"><i>Figure 2: 1-D domain of length <i>L</i> transporting a property φ.</i></p>
 
 A property &phi; is transported by means of convection and diffusion through the 1-D domain of length L. In a steady convection diffusion scenario, the equation can be define as:
-$$ 
+```math
 \frac{d}{dx}\left(\rho u \phi \right) = \frac{d}{dx}\left(\Gamma_\phi \frac{d \phi}{dx} \right)
-$$
+```
 where _u_ is the fluid velocity, _&rho;_ is the fluid density and $\Gamma_\phi$ is the diffusion coefficient. In real life terms, this problem could be the modelling of temperature distribution in an insulated pipe of length L carrying fluid from a hot reservoir at constant $T = T_0$ to a cold reservoir at constant $T = T_L$. 
 
 The analytical solution is found using:
-$$
+```math
 \phi = \phi_0 + \frac{\text{exp}(\rho ux/\Gamma_\phi) - 1}{\text{exp}(\rho uL/\Gamma_\phi) - 1}\left( \phi_L - \phi_0 \right)
-$$
+```
 This assignment is typically solved using a finite-volume method, such as Central Differencing Scheme, or Power-Law Differencing Scheme. However, we will be using Physics informed Neural Network in this project to solve this.
 ## 2. Environment Variables
 
