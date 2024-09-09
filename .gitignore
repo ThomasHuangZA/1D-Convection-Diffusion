@@ -83,6 +83,4 @@ cython_debug/
 .vscode/
 
 # Specific folder and files for your project
-readme image/
-readme image/PINN_schematic.png
-readme image/problem_setup.png
+
