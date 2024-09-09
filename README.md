@@ -82,19 +82,29 @@ net.apply_output_transform(output_transform)
 
 ```
 This model is trained with 25000 iterations, with the training process shown below.
-<figure style="text-align: center;">
+<!-- <figure style="text-align: center;">
   <img src="training_animation.gif" alt="Hard-constraint PINN" style="display: block; margin-left: auto; margin-right: auto;">
   <figcaption>Figure 1: hPINN training process.</figcaption>
-</figure>
+</figure> -->
+<p align="center">
+  <img src="training_animation.gif" alt="Hard-constraint PINN">
+</p>
+
+<p align="center"><i>Figure 3: hPINN training process.</i></p>
 
 ### 3.2 Soft constraint PINN with two data points
 Here, we add Dirichlet boundary conditions at $x=0$ and $x=L$ as a soft-constraint, which means that the boundary condtions are additional loss term inside the neural network. We can add more points, but I have found 2 to be sufficient for this problem.
 
 This model is training with 5000 iterations, with the training process shown below.
-<figure style="text-align: center;">
+<!-- <figure style="text-align: center;">
   <img src="training_animation_obs.gif" alt="Soft-constraint PINN" style="display: block; margin-left: auto; margin-right: auto;">
   <figcaption>Figure 1: PINN training process.</figcaption>
-</figure>
+</figure> -->
+<p align="center">
+  <img src="training_animation_obs.gif" alt="Soft-constraint PINN">
+</p>
+
+<p align="center"><i>Figure 4: PINN training process.</i></p>
 
 ## Citation
 ```
