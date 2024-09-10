@@ -3,7 +3,7 @@
 
 This project simulates a 1D convection diffusion equation using [Physics-Informed Neural Networks (PINN)](https://www.sciencedirect.com/science/article/abs/pii/S0021999118307125). It was inspired by Prof Pavlos Aleiferis's assignment from Computational Fluid Dynamics Module and utilises the [DeepXDE](https://github.com/lululxvi/deepxde?tab=readme-ov-file) library for implementation.
 
-Last updated: 2024-09-08
+Last updated: 2024-09-07
 
 <p align="center">
   <img src="readme image\PINN_schematic.png" alt="PINN schematic">
@@ -13,7 +13,7 @@ Last updated: 2024-09-08
 
 DeepXDE is a popular library for PINN, and supports Tensorflow (1.x and 2.x), PyTorch, JAX, and PaddlePaddle as backends. It contains many in-built functions and tools which makes code structure simple. Additionally, it offers superior training time, as the automatic differentiation function is a [lazy evaluation](https://deepxde.readthedocs.io/en/latest/modules/deepxde.gradients.html#module-deepxde.gradients.gradients), which means that gradients are only computed when needed.
 
-To install and use DeepXDE, make sure you have the required [prequisites](https://github.com/lululxvi/deepxde?tab=readme-ov-file).
+To install and use DeepXDE, make sure you have the required [prequisites](https://github.com/lululxvi/deepxde?tab=readme-ov-file). This project uses Tensorflow as the backend.
 ```pip
 $ pip install deepxde
 ```
