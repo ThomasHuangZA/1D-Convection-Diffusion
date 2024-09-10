@@ -3,6 +3,8 @@
 
 This project simulates a 1D convection diffusion equation using [Physics-Informed Neural Networks (PINN)](https://www.sciencedirect.com/science/article/abs/pii/S0021999118307125). It was inspired by Prof Pavlos Aleiferis's assignment from Computational Fluid Dynamics Module and utilises the [DeepXDE](https://github.com/lululxvi/deepxde?tab=readme-ov-file) library for implementation.
 
+Last updated: 2024-09-08
+
 <p align="center">
   <img src="readme image\PINN_schematic.png" alt="PINN schematic">
 </p>

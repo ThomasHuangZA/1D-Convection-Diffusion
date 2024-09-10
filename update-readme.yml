@@ -1,0 +1,26 @@
+name: Update README
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update README
+        run: |
+          # Your update script here
+          sed -i 's/Last updated: .*/Last updated: '"$(date +'%Y-%m-%d')"'/' README.md
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add README.md
+          git commit -m "Update README with latest date" || exit 0
+          git push
