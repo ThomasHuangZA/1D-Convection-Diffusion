@@ -1,7 +1,7 @@
 
 # Solving 1-Dimensional Convection-Diffusion Equation with Physics-Informed Neural Network (PINN)
 
-This project simulates a 1D convection diffusion equation using [Physics-Informed Neural Networks (PINN)](https://www.sciencedirect.com/science/article/abs/pii/S0021999118307125). It was inspired by [Prof. Pavlos Aleiferis's](#acknowledgements) assignment from Computational Fluid Dynamics (CFD) Module and utilises the [DeepXDE](https://github.com/lululxvi/deepxde?tab=readme-ov-file) library for implementation.
+This project simulates a 1D convection diffusion equation using [Physics-Informed Neural Networks (PINN)](https://www.sciencedirect.com/science/article/abs/pii/S0021999118307125). It was inspired by [Prof. Pavlos Aleiferis's](#5-acknowledgements) assignment from Computational Fluid Dynamics (CFD) Module and utilises the [DeepXDE](https://github.com/lululxvi/deepxde?tab=readme-ov-file) library for implementation.
 
 Last updated: 2024-09-10
 
@@ -17,9 +17,13 @@ To install and use DeepXDE, make sure you have the required [prequisites](https:
 ```pip
 $ pip install deepxde
 ```
-DeepXDE can be then imported in Python:
+The following packages are used:
 ```python
+import os
 import deepxde as dde
+import numpy as np
+import matplotlib.pyplot as plt
+import imageio
 ```
 
 
@@ -110,7 +114,7 @@ This model is training with 5000 iterations, with the training process shown bel
 
 <p align="center"><i>Figure 4: PINN training process.</i></p>
 
-## Citation
+## 4. Citation
 ```
 @article{lu2021deepxde,
   author  = {Lu, Lu and Meng, Xuhui and Mao, Zhiping and Karniadakis, George Em},
@@ -177,7 +181,7 @@ This model is training with 5000 iterations, with the training process shown bel
 ```
 
 
-## Acknowledgements
+## 5. Acknowledgements
 
  - [Prof. Pavlos  Aleiferis](https://profiles.imperial.ac.uk/p.aleiferis)
 
