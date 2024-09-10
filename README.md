@@ -87,7 +87,7 @@ This model is trained with 25000 iterations, with the training process shown bel
   <figcaption>Figure 1: hPINN training process.</figcaption>
 </figure> -->
 <p align="center">
-  <img src="training_animation.gif" alt="Hard-constraint PINN">
+  <img src="training_animation.gif" alt="Hard-constraint PINN" loop="infinite">
 </p>
 
 <p align="center"><i>Figure 3: hPINN training process.</i></p>
@@ -101,7 +101,7 @@ This model is training with 5000 iterations, with the training process shown bel
   <figcaption>Figure 1: PINN training process.</figcaption>
 </figure> -->
 <p align="center">
-  <img src="training_animation_obs.gif" alt="Soft-constraint PINN">
+  <img src="training_animation_obs.gif" alt="Soft-constraint PINN" loop="infinite">
 </p>
 
 <p align="center"><i>Figure 4: PINN training process.</i></p>
