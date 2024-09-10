@@ -29,15 +29,17 @@ import deepxde as dde
 <p align="center"><i>Figure 2: 1-D domain of length <i>L</i> transporting a property ϕ.</i></p>
 
 A property $\phi$ is transported by means of convection and diffusion through the 1-D domain of length L. In a steady convection diffusion scenario, the equation can be define as:
-```math
+<!-- ```math
 \frac{d}{dx}\left( \rho u \phi \right) = \frac{d}{dx}\left(\Gamma_\phi \frac{d \phi}{dx} \right)
-```
+``` -->
+$$\frac{d}{dx}\left( \rho u \phi \right) = \frac{d}{dx}\left(\Gamma_\phi \frac{d \phi}{dx} \right)$$
 where _u_ is the fluid velocity, _&rho;_ is the fluid density and $\Gamma_\phi$ is the diffusion coefficient. In real life terms, this problem could be the modelling of temperature distribution in an insulated pipe of length L carrying fluid from a hot reservoir at constant $T = T_0$ to a cold reservoir at constant $T = T_L$. 
 
 The analytical solution is found using:
-```math
+<!-- ```math
 \phi = \phi_0 + \frac{\text{exp}( \rho ux/\Gamma_\phi) - 1}{\text{exp}( \rho uL/\Gamma_\phi) - 1}\left( \phi_L - \phi_0 \right)
-```
+``` -->
+$$\phi = \phi_0 + \frac{\text{exp}( \rho ux/\Gamma_\phi) - 1}{\text{exp}( \rho uL/\Gamma_\phi) - 1}\left( \phi_L - \phi_0 \right)$$
 This assignment is typically solved using a finite-volume method, such as Central Differencing Scheme, or Power-Law Differencing Scheme. However, we will be using Physics informed Neural Network in this project to solve this.
 ## 2. Environment Variables
 
