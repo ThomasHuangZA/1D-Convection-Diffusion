@@ -68,6 +68,7 @@ lr = 0.001
 num_domain = 100
 num_test = 100
 train_distribution = "uniform"
+optimiser = "adam"
 ```
 ### 3.1 Hard constraint PINN (hPINN)
 The boundary conditions are enforced by hard-constraining the neural network output. The collocation points (an input point in the integration domain) have no labeled data,so the loss inside the domain is defined driven purely by physics loss. 
